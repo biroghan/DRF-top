@@ -6,7 +6,7 @@ class Book(models.Model):
     name = models.CharField(max_length=150)
     store_name = models.CharField(max_length=50)
     description = models.TextField()
-    image = models.ImageField(default='',upload_to='store_image/',null=True)
+    image = models.ImageField(default='',upload_to='store_image/',null=True,blank=True)
     fav = models.BooleanField(default=False)
     create_at = models.DateTimeField(default=datetime.now)
 
