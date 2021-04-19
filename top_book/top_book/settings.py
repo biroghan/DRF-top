@@ -127,7 +127,7 @@ STATIC_ROOT= BASE_DIR / 'staticfiles'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 STATICFILES_DIRS = [
-    BASE_DIR / "staticfiles",
+    BASE_DIR / "static",
 ]
 MEDIA_ROOT= '/media/'
 MEDIA_ROOT=BASE_DIR / 'store_image'
