@@ -19,6 +19,9 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/',include('book.urls')),
+    path('',include('rest_framework.urls')),
+    path('auth/',include('djoser.urls')),
+     path('auth/',include('djoser.urls.authtoken'))
 ]
 
 from django.conf import settings
